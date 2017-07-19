@@ -165,28 +165,26 @@ a {
   .main-content .content-subcontainer {
     padding: 0 20px 20px 20px; }
 
-.page-title-box {
+.content-header {
   padding: 20px;
   border-bottom: 1px solid #eee;
   margin: 0 -20px 20px -20px; }
-
-.page-title-box .page-title {
-  margin-bottom: 0;
-  float: left;
-  margin-bottom: 0;
-  margin-top: 0;
-  font-size: 1.6rem;
-  color: #444;
-  font-weight: 400; }
-
-.page-title-box .breadcrumb {
-  float: right;
-  background-color: transparent !important; }
-  .page-title-box .breadcrumb li {
-    display: inline-block; }
-    .page-title-box .breadcrumb li .active {
-      color: #777; }
-    .page-title-box .breadcrumb li:before {
-      padding: 0 5px;
-      color: #ccc;
-      content: "/\00a0"; }
+  .content-header .page-title {
+    margin-bottom: 0;
+    float: left;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 1.6rem;
+    color: #444;
+    font-weight: 400; }
+  .content-header .breadcrumb {
+    float: right;
+    background-color: transparent !important; }
+    .content-header .breadcrumb li {
+      display: inline-block; }
+      .content-header .breadcrumb li .active {
+        color: #777; }
+      .content-header .breadcrumb li:before {
+        padding: 0 5px;
+        color: #ccc;
+        content: "/\00a0"; }

@@ -190,33 +190,33 @@ a{
         padding: 0 20px 20px 20px;
     }
 }
-.page-title-box {
+.content-header {
     padding: 20px;
     border-bottom: 1px solid #eee;
     margin: 0 -20px 20px -20px;
-}
-.page-title-box .page-title {
-    margin-bottom: 0;
-    float: left;
-    margin-bottom: 0;
-    margin-top: 0;
-    font-size: 1.6rem;
-    color: #444;
-    font-weight: 400;
-}
-.page-title-box .breadcrumb {
-    float: right;
-    background-color: transparent !important;
-    li{
-            display: inline-block;
-            .active{
-                    color: #777;
-            }
-            &:before {
-            padding: 0 5px;
-            color: #ccc;
-            content: "/\00a0";
-            }
+    .page-title {
+        margin-bottom: 0;
+        float: left;
+        margin-bottom: 0;
+        margin-top: 0;
+        font-size: 1.6rem;
+        color: #444;
+        font-weight: 400;
     }
+    .breadcrumb {
+        float: right;
+        background-color: transparent !important;
+        li{
+                display: inline-block;
+                .active{
+                        color: #777;
+                }
+                &:before {
+                padding: 0 5px;
+                color: #ccc;
+                content: "/\00a0";
+                }
+        }
 
+    }
 }
