@@ -11,7 +11,7 @@ a{
     text-decoration: none !important;
 }
 .header{
-        box-shadow: 1px 1px 4px #eee;
+        box-shadow: 3px 3px 4px #eee;
         height:60px;
         width: 100%;
         background-color: hsla(0,0%,100%,.8);
@@ -179,6 +179,44 @@ a{
             margin-right: 5px;
             font-size: 0.9rem;
         }
+    }
+
+}
+.main-content{
+    margin-left: 260px;
+    overflow: hidden;
+    font-size: 0.9rem;
+    .content-subcontainer{
+        padding: 0 20px 20px 20px;
+    }
+}
+.page-title-box {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    margin: 0 -20px 20px -20px;
+}
+.page-title-box .page-title {
+    margin-bottom: 0;
+    float: left;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 1.6rem;
+    color: #444;
+    font-weight: 400;
+}
+.page-title-box .breadcrumb {
+    float: right;
+    background-color: transparent !important;
+    li{
+            display: inline-block;
+            .active{
+                    color: #777;
+            }
+            &:before {
+            padding: 0 5px;
+            color: #ccc;
+            content: "/\00a0";
+            }
     }
 
 }

@@ -36,7 +36,7 @@
           <ul class="nav navbar-nav">
             <li class="">
               <a class="nav-item nav-link " href="" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
-                <img src="images/user.jpg" alt="user-img" class="img-circle user-img"> <span class="user-title">Yifan</span>
+                <img src="images/user.jpg" alt="user-img" class="img-circle user-img"> <span class="user-title hidden-xs">Yifan</span>
               </a>
 
             </li>
@@ -46,7 +46,6 @@
     </header>
     <!--header end-->
     <aside class="sidebar">
-        <!-- sidebar: style can be found in sidebar.less -->
         <section class="sub-container" style="height: auto;">
 
           <ul class="menu">
@@ -109,6 +108,61 @@
         </section>
         <!-- /.sidebar -->
       </aside>
+      <div class="main-content">
+          <div class="content-subcontainer">
+
+               <div class="container">
+
+                   <div class="row">
+							<div class="col-12">
+								<div class="page-title-box">
+                                    <h4 class="page-title">Dashboard </h4>
+                                    <ol class="breadcrumb p-0 m-0">
+                                        <li>
+                                            <a href="#">Dashboard</a>
+                                        </li>
+                                        <li class="active">
+                                            Home
+                                        </li>
+                                    </ol>
+                                    <div class="clearfix"></div>
+                                </div>
+							</div>
+						</div>
+
+               <div class="row">
+               	<div class="col-md-8 offset-md-2">
+               		<div class="panel panel-default">
+               			<!-- <div class="panel-heading">Add a vote</div> -->
+               			<div class="panel-body">
+               				<form action="/admin/vote" method="post">
+
+               					<div class="form-group">
+               						<label for="title">Title</label>
+               						<input type="text" name="title" id="title" class="form-control">
+                                           					</div>
+
+           						<div class="form-group">
+           							<label for="number">Numbers of voters</label>
+           							<input type="text" name="number" id="number" class="form-control">
+                                       						</div>
+
+           						<button type="submit" class="btn btn-info">Add</button>
+
+
+           				<input type="hidden" name="csrf_name" value="csrf596ec22255a00">
+           				<input type="hidden" name="csrf_value" value="bc42449c34ee671f2af0f6ddac379b42">
+
+               				</form>
+               			</div>
+               		</div>
+               	</div>
+               </div>
+
+           	</div>
+
+          </div>
+      </div>
 
 </div>
 <!-- ./wrapper -->
