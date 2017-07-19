@@ -1,0 +1,184 @@
+/**
+Author: yfgeek
+**/
+$font-primary: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+$siderbar-color: rgb(55, 65, 78);
+
+body{
+    background-color: #f9f9f9;
+}
+a{
+    text-decoration: none !important;
+}
+.header{
+        box-shadow: 1px 1px 4px #eee;
+        height:60px;
+        width: 100%;
+        background-color: hsla(0,0%,100%,.8);
+        z-index: 200;
+}
+.nav-subcontainer{
+    margin-bottom: 0;
+    margin-left: 260px;
+    border: none;
+    min-height: 60px;
+    border-radius: 0;
+    width: auto;
+    -webkit-transition: margin-left .3s ease-in-out;
+    -o-transition: margin-left .3s ease-in-out;
+    transition: margin-left .3s ease-in-out;
+}
+.logo{
+    color: #e45329;
+    border-bottom: 0 solid transparent;
+    -webkit-transition: width .3s ease-in-out;
+    -o-transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    display: block;
+    float: left;
+    height: 60px;
+    font-size: 1.1rem;
+    line-height: 60px;
+    text-align: center;
+    width: 260px;
+    font-family: $font-primary;
+    padding: 0 15px;
+    font-weight: 300;
+    overflow: hidden;
+    .logo-lg{
+        font-size: 1.3rem;
+        b{
+            font-weight: bold;
+        }
+    }
+    .logo-mini{
+        display: none;
+    }
+}
+.sidebar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 60px;
+    min-height: 100%;
+    width: 260px;
+    z-index: 100;
+    -webkit-transition: -webkit-transform .3s ease-in-out,width .3s ease-in-out;
+    -moz-transition: -moz-transform .3s ease-in-out,width .3s ease-in-out;
+    -o-transition: -o-transform .3s ease-in-out,width .3s ease-in-out;
+    transition: transform .3s ease-in-out,width .3s ease-in-out;
+    .sub-container{
+        font-size: 0.9rem;
+        background-color: $siderbar-color;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            white-space: nowrap;
+            overflow: hidden;
+            li{
+                list-style: none;
+                position: relative;
+                margin: 0;
+                padding: 0;
+                a{
+                    color: #bdbdbd;
+                    display: block;
+                    padding: 12px 20px;
+                    margin: 2px 0;
+                    line-height: 1.3;
+                    i{
+                        display: inline-block;
+                        font-size: 1rem;
+                        line-height: 17px;
+                        margin-left: 3px;
+                        margin-right: 15px;
+                        text-align: center;
+                        vertical-align: middle;
+                        width: 20px;
+                    }
+                }
+                .active {
+                    color: #ffffff !important;
+                    background-color: #313a46;
+                }
+            }
+        }
+        .title{
+            border: 0;
+            font-weight: normal;
+            line-height: 1;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            padding: 12px 20px !important;
+            letter-spacing: .05em;
+            pointer-events: none;
+            cursor: default;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: #98a6ad;
+            font-family: 'Hind Madurai', sans-serif;
+        }
+        .right-subcontainer{
+            .pull-right{
+                margin-left: 0 !important;
+                margin-right:  0 !important;
+            }
+        }
+    }
+}
+.sidebar-toggle{
+    float: left;
+    padding: 15px 15px;
+    font-family: fontAwesome;
+    color: #000;
+    &:before{
+            content: "\f0c9";
+    }
+}
+.navbar-rightside{
+    float:right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    .navbar-nav {
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0;
+        height: 60px;
+        -webkit-box-orient: initial;
+        -webkit-box-direction: initial;
+        -webkit-flex-direction: initial;
+        margin-right: 10px;
+    }
+    li{
+        color: #333;
+        float: left;
+        display: inline;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        white-space: nowrap;
+        line-height: 60px;
+        a{
+            color: #333;
+            padding:0;
+        }
+        .user-img{
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+        }
+        .user-title{
+            color: #333;
+            margin-left: 5px;
+            margin-right: 5px;
+            font-size: 0.9rem;
+        }
+    }
+
+}

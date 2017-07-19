@@ -1,0 +1,22 @@
+{
+  "name": "DreamyAdmin",
+  "version": "1.0.0",
+  "description": "Free Admin Control Panel Theme Based On Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.1",
+    "gulp-uncss": "^1.0.6",
+    "gulp-useref": "^3.1.2",
+    "uncss": "^0.14.1"
+  }
+}
